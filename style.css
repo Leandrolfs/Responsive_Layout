@@ -1,9 +1,6 @@
 /*================= RESET ==============*/
 *{margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;
   font-family: 'Lato', sans-serif;}
-  /*outline:especifica estilo, cor e largura do esboço. font-weight:especifica o peso em (negrito) da fonte
-  box-sizing: especifica que um elemento deve ter largura e altura bem definida de acordo com o elemento, sem usar o
-  padding para dar espaçamento*/
 body{background-color: #f5f5f5;}
 a{text-decoration: none;}
 ul{list-style: none;}
@@ -14,8 +11,8 @@ img{max-width: 100%;}
 
 /* == BG Colors == */
 .bg-gradient{background: linear-gradient(to right, #ce2e3c, #da6709);}
-.bg-black{background-color: #130400;}/*bt sobre*/
-.bg-white{background-color: #fff;}/*bt cadastrar*/
+.bg-black{background-color: #130400;}
+.bg-white{background-color: #fff;}
 
 /* == Color == */
 .cl-white{color: #fff;}
@@ -27,20 +24,19 @@ img{max-width: 100%;}
 
 /* == CABEÇALHO == */
 .logo{width: 56px; height: 56px; float: left; background: url(../img/logo-mobile.png) center center/56px no-repeat;
-font-size: 0;}/*center para deixar a logo bem centralizada, /56px para que ela não perca qualidade e o font-size 0
-              para que o texto não apareça*/
+font-size: 0;}
 
 /*Icone de opções de conteudo do header*/
-.btn-menu{width: 56px; height: 56px; float: right; text-align: center; border-radius: 56px; cursor: pointer;}/*Usando as cores da logo, rosa e laranja, com o linear-gradiente as cores se mistura e 
+.btn-menu{width: 56px; height: 56px; float: right; text-align: center; border-radius: 56px; cursor: pointer;}
 torna apenas uma cor*/
 
 /* == MENU == */
-.menu{display: none; width: 100%; height: 100%; position: fixed; background-color: rgba(0, 0, 0, 0.9); top: 0; left: 0;}/*Preto com zero ponto 9 de transparencia*/
+.menu{display: none; width: 100%; height: 100%; position: fixed; background-color: rgba(0, 0, 0, 0.9); top: 0; left: 0;}
 .btn-close{font-size: 1.5em; float: right; cursor: pointer; margin: 2% 3% 0 0;}
-.menu ul{width: 100%; float: left; text-align: center;}/*Centralizando as opções*/
-.menu li{padding: 1.5%;}/*Espaçamento entre as opções*/
-.menu li a{font-size: 2em; color: #fff; padding: 1.5% 3%;}/*Espacamento topo e bottom*/
-.menu li a:hover{border: 1px solid #da6709;}/*Borda cor laranja ao passar o mouse sob o elemento*/
+.menu ul{width: 100%; float: left; text-align: center;}
+.menu li{padding: 1.5%;}
+.menu li a{font-size: 2em; color: #fff; padding: 1.5% 3%;}
+.menu li a:hover{border: 1px solid #da6709;}
 
 /* == BANNER ==*/
 .banner{background: url(../img/bg.jpg) no-repeat fixed;}
@@ -55,11 +51,11 @@ torna apenas uma cor*/
 
 /* == SERVIÇOS == */
 .servico{width: 100%; text-align: left; margin-bottom: 3%;}
-.servico img{border-radius: 7px 7px 0 0;}/*Formata so a parte superior da imagem*/
-.inner{padding: 7%;}/*Espaçamento do texto (conteudo) da lateral*/
+.servico img{border-radius: 7px 7px 0 0;}
+.inner{padding: 7%;}
 .inner a{font-size: 1.5em; color: #130400; font-weight: 700;}
 .inner h4{font-size: 1.2em; color: #130400; margin-top: 2%;}
-.inner p{margin-top: 6%; color: #130400; line-height: 1.5em;}/*line-height coloca espaçamento entre as linhas*/
+.inner p{margin-top: 6%; color: #130400; line-height: 1.5em;}
 
 /* == NEWSLETTER == */
 .newsletter h2{font-size: 1.5em; font-weight: 700;}
@@ -70,8 +66,8 @@ padding: 5%;}
 cursor: pointer; margin-top: 2%;}
 
 /* == RODAPE == */
-.social-icons a{font-size: 1.5em; color: rgba(255, 255, 255, 0.7); margin-right: 3%;}/*margin para que os elementos não fique muito juntos*/
-.social-icons a:last-child{margin-right: 0;}/*Retirando a margin a direita do ultimo elemento*/
+.social-icons a{font-size: 1.5em; color: rgba(255, 255, 255, 0.7); margin-right: 3%;}
+.social-icons a:last-child{margin-right: 0;}
 .social-icons a:hover{color: rgb(255, 255, 255);}
 .copyright{margin-top: 3%; color: rgba(255, 255, 255, 0.7);}
 
@@ -86,7 +82,7 @@ cursor: pointer; margin-top: 2%;}
 /* == SMALL DEVICES - TABLETS == */
 @media screen and (min-width: 768px){
   .servico{width: 49%; float: left; margin-right: 2%;}
-  .servico:nth-child(2){margin-right: 0;}/*Retirando a margem a direita do 2° elemento para que ele se ajuste ao lado do primeiro*/
+  .servico:nth-child(2){margin-right: 0;}
   .newsletter h2{font-size: 2em;}
   .newsletter h3{font-size: 1.5em;}
   .newsletter input{width: 70%; padding: 2%; float: left; margin-right: 1%;}
@@ -100,8 +96,8 @@ cursor: pointer; margin-top: 2%;}
 .title h3{font-size: 2em;}
 .buttons{width: 30%; float: right; margin-top: 0;}
 .servico{width: 32%;}
-.servico:nth-child(2){margin-right: 2%;}/*Colocando a margem a direita que foi zera anteriormente*/
-.servico:nth-child(3){margin-right: 0;}/*Retirando a margem a direita di 3 elemento para não quebrar a pagina*/
+.servico:nth-child(2){margin-right: 2%;}
+.servico:nth-child(3){margin-right: 0;}
 .newsletter input{width: 60%; float: none;}
 .newsletter button{width: 20%; float: none;}
 }
@@ -111,32 +107,7 @@ cursor: pointer; margin-top: 2%;}
 .btn-menu{display: none;}
 .btn-close{display: none;}
 .menu{width: auto; height: 56px; line-height: 56px; float: right; background-color: #f5f5f5; display: block !important; position: static;}
-.menu li{padding: 0; float: left;}                                                /*O !important força o display a mostrar o menu*/
+.menu li{padding: 0; float: left;}                                              
 .menu li a{color: #130400; font-size: 1em; padding: 15px;}
 .menu li a:hover{border: none; color: #da6709;}
 }
-
-
-
-
-
-/*Logo = width: 642 e height: 168, para não perder muito a aparencia o width:214*/
-/*Deixar só o codigo que for alterar, por ex: como a altura não vai ser alterada não é necessario ela esta seta aqui*/
-
-
-
-/* == MEDIA TYPES == OS 2 MAIS USADOS*/
-/*screen - Usado para formatar o css de acordo com a resolução da tela do aparelho do usuario, este serve para monitores
-ou dispositivos com telas coloridas e resolução adequada*/
-
-/*print - Usado para Impressoras, para dar uma versão/estilo do site/pagina para impimir*/
-
-/*@media print{
-  /*Todo o cod que for colocado aqui sera usado para formatar uma versão especifica da pagina na hora de imprimi-la
-.title h2{font-size: 2.5em; color: red; font-weight: 700;}
-.title h3{font-size: 1.5em; color: blue;}
-}
-
-@media screen and(min-width: 320px){
-   
-}*/
